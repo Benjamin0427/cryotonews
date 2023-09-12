@@ -107,7 +107,7 @@ function App() {
         },
         body: raw,
       };
-      fetch('https://new-crypto.onrender.com/add', options)
+      fetch('https://new-crypto.onrender.com/summary', options)
         .then(response => response.json())
         .then(result => setText(result.summary))
         .catch(error => console.log('error', error));
